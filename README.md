@@ -1,6 +1,6 @@
 # README
 # TODO
-[ ] Infile data
+[X] Infile data
 [ ] combine .FIT files
 [ ] sqlite db
 [ ] sp package data structures
