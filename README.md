@@ -1,7 +1,8 @@
 # README
 # TODO
 [X] Infile data
-[ ] combine .FIT files
-[ ] sqlite db
+[X] combine .FIT files
+[ ] Infile all data
+[X] sqlite db
 [ ] sp package data structures
-[ ] overlay movement and natural resource data 
+[ ] overlay movement and natural resource data
