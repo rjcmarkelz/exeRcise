@@ -4,5 +4,5 @@
 [X] combine .FIT files
 [ ] Infile all data
 [X] sqlite db
-[ ] sp package data structures
+[X] sp package data structures
 [ ] overlay movement and natural resource data
