@@ -6,10 +6,11 @@ library(raster)
 library(sp)
 
 # data files
-setwd("/Users/rjcmarkelz1/git.repos/exRcise/data/")
+setwd("/data/")
 list.files()
 dataFiles <- lapply(Sys.glob("Move*.fit"), read_fit)
 names(dataFiles)
+
 str(dataFiles)
 
 
