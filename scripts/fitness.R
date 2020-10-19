@@ -6,7 +6,7 @@ library(raster)
 library(sp)
 
 # data files
-setwd("/data/")
+setwd("/Users/rjcmarkelz1/git.repos/exRcise/data/")
 list.files()
 dataFiles <- lapply(Sys.glob("Move*.fit"), read_fit)
 names(dataFiles)
@@ -79,7 +79,7 @@ set.seed(10)
 precip <- round((runif(length(lattest))*10)^3)
 
 psize <- 1 + precip/500
-plot(stations, cex=psize, pch=20, col='red', main="precipitation")
+plot(stations, cex=psize, pch=20, col='red', main="test-precipitation")
 text(stations, name, pos=4)
 lines(stations, lwd=3, pch=20)
 points(cmpts)
@@ -131,14 +131,14 @@ points(stations, cex=psize, pch=20, col='red', main="precipitation")
 wst <- data.frame(longitude, latitude, name, precip)
 wst
 
-# fitfileR for infiling data
-# if(!requireNamespace("remotes")) {
-#     install.packages("remotes")
-# }
-# remotes::install_github("grimbough/FITfileR")
-# library(FITfileR)
-#
-# cmtest <- readFitFile("Move_2019_09_29_09_16_15_Trail_running.fit")
-# cmtest
-# cmtest_records <- records(cmtest)
-# cmtest_records
+fitfileR for infiling data
+if(!requireNamespace("remotes")) {
+    install.packages("remotes")
+}
+remotes::install_github("grimbough/FITfileR")
+library(FITfileR)
+
+cmtest <- readFitFile("Move_2019_09_29_09_16_15_Trail_running.fit")
+cmtest
+cmtest_records <- records(cmtest)
+cmtest_records
